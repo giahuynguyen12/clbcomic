@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.main{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.title{
+    text-align: center;
+    padding: 2.2em 0 0.5em 0;
+}
+
+.alert{
+    background-color: #369e45;
+    color: #fff;
+}
+
+.alert .info{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 16px;
+}
+
+.alert .info a{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.alert .info a i{
+    padding: 0 8px;
+}
+
+.alert .info p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 16px;
+    width: 100%;
+}
+
+.nav-left{
+    display: flex;
+    cursor: pointer;
+    width: 50%;
+}
+
+.nav-left img{
+    margin-right: 26px;
+}
+
+.nav-left ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-left ul li{
+    padding: 0 16px;
+}
+
+.nav-left ul li:hover{
+    color: #369e45;
+    transition: 0.5s;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.nav-right input{
+    border: none;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    background-color: #eee;
+    padding: 15px 30px 15px 30px;
+    color: #232323;
+    font-weight: 500;
+    width: 280px;
+}
+
+.nav-right input[type="text"]
+{
+    font-size: 14px;
+}
+
+.nav-right .fa-user, .fa-cart-shopping{
+    margin: 0 0 0 32px;
+    cursor: pointer;
+    font-size: 26px;
+
+}
+
+.fa-magnifying-glass{
+    background-color: #6c6;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    color: #fff;
+    padding: 16px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.slide img{
+    width: 100%;
+    margin: 2.2em 0 0 0;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.categories .card{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.categories .card:hover{
+    transform: translateY(-10px);
+}
+
+.categories .card img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.categories .card h5{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    padding: 15px;
+}
+
+.best-sellers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.best-sellers .item{
+    width: 31%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+.best-sellers .item .shape-item{
+    padding: 16px 16px;
+}
+
+.best-sellers .item .shape-item img{
+    width: 100%;
+    padding: 20px 15px 15px;
+}
+
+.best-sellers .item .shape-item h2{
+    color: #000;
+    height: 30px;
+    overflow: hidden;
+    line-height: initial;
+    font-size: 21px;
+    font-weight: 400;
+    height: 30px;
+    margin-bottom: 18px;
+}
+
+.best-sellers .item .shape-item .nav-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-sellers .item .shape-item .nav-item span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.best-sellers .item .shape-item .nav-item i{
+    font-size: 32px;
+    color: #369e45;
+    cursor: pointer;
+}
+
+.favorite-brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow p{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 0 0 6px;
+}
+
+.follow p a{
+    color: #6c6;
+}
+
+.inside-view{
+    display: flex;
+    flex-direction: column;
+}
+
+.inside-view .ads{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.footer img{
+    margin-bottom: -4px;
+}
+
+.footer .nav-footer{
+    background-color: #6dcb55;
+    text-align: left;
+}
+
+.footer .nav-footer table{
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
+.footer .nav-footer table tr th{
+    margin: 0 30px 13px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    width: 27%;
+}
+
+.footer .nav-footer table tr td{
+    width: 27%;
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    height: 56px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer .nav-footer table tr td:hover{
+    color: #369e45;
+}
+
+.footer .nav-footer table tr td .social{
+    display: flex;
+    align-items: center;
+}
+
+.footer .nav-footer table tr td .social i{
+    padding-right: 10px;
+    font-size: 23px;
+} 
+
+.footer .nav-footer table tr td input{
+    width: 100%;
+    border-radius: 56px;
+    height: 56px;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0a0a0a;
+    margin-bottom: 12px;
+}
+
+.footer .nav-footer table tr td button{
+    background: #205529;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 100%;
+    height: 56px;
+    border-radius: 56px;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0 6.5em 0;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .best-sellers {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .best-sellers .item{
+       width: 60%;
+    }
+}
