@@ -352,6 +352,31 @@ a {
 a:visited {
   color: black;
 }
+ 
+.slide-second {
+  padding-top: 10rem;
+  text-align: center;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.slide-second h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.slide-second p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #555;
+  padding: 4rem 0;
+}
+
 
 @media only screen and (max-width: 1500px) {
     .best-sellers {
